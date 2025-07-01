@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Michael Yalemgeta - Android Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle">
+      <!-- Light Mode Icon -->
+      <svg
+        id="light-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <circle cx="12" cy="12" r="5" fill="#FFC107" />
+        <path
+          d="M12 3V1M12 23v-2M3 12H1M23 12h-2M5.7 5.7l-1.4-1.4M18.4 18.4l-1.4-1.4M5.7 18.4l-1.4 1.4M18.4 5.7l-1.4 1.4"
+          stroke="#FFC107"
+          stroke-width="2"
+        />
+      </svg>
+      <!-- Dark Mode Icon -->
+      <svg
+        id="dark-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        style="display: none"
+      >
+        <circle cx="12" cy="12" r="5" fill="#BDBDBD" />
+        <path
+          d="M12 3V1M12 23v-2M3 12H1M23 12h-2M5.7 5.7l-1.4-1.4M18.4 18.4l-1.4-1.4M5.7 18.4l-1.4 1.4M18.4 5.7l-1.4 1.4"
+          stroke="#BDBDBD"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+
+    <!-- Loading Screen -->
+    <div id="loading">
+      <h1>Welcome to Portfolio</h1>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+      <header>
+        <h1 class="floating">Michael Yalemgeta</h1>
+        <p>Android Developer | Passionate about AI & ML</p>
+        <div class="hero-cta">
+          <a href="#projects" class="cta-button cta-primary">View My Work</a>
+          <a href="#contact" class="cta-button cta-secondary">Get In Touch</a>
+        </div>
+      </header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="about">
+        <div class="section-container">
+          <h2>About Me</h2>
+          <p id="about-paragraph" style="font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+            <!-- About me content will be loaded here -->
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-container">
+          <h2>Android Projects</h2>
+          <div class="filter-container" id="project-filter-container" style="display: none;">
+            <button class="filter-btn active" data-filter="all">All</button>
+          </div>
+          <div class="project-grid" id="project-grid">
+            <!-- Projects will be dynamically loaded here -->
+          </div>
+          <div class="pagination-container" id="project-pagination-container" style="display: none;">
+            <!-- Pagination buttons will be dynamically loaded here -->
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-container">
+          <h2>Skills</h2>
+          <div class="filter-container" id="skill-filter-container" style="display: none;">
+            <button class="filter-btn active" data-filter="all">All</button>
+          </div>
+          <div class="skills-grid" id="skills-grid">
+            <!-- Skills will be dynamically loaded here -->
+          </div>
+          <div class="pagination-container" id="skill-pagination-container" style="display: none;">
+            <!-- Pagination buttons will be dynamically loaded here -->
+          </div>
+        </div>
+      </section>
+
+      <footer id="contact">
+        <h2>Contact</h2>
+        <div class="social-links" id="social-links-container">
+          <!-- Contact links will be dynamically loaded here -->
+        </div>
+      </footer>
+    </div>
+
+    <!-- JavaScript to handle loading and animations -->
+    <script src="scripts.js" defer></script>
+  </body>
+</html>

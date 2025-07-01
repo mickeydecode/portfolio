@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>Portfolio Content Manager</h1>
+
+    <div id="admin-container">
+        <!-- About Section -->
+        <section id="about-admin">
+            <h2>About Me</h2>
+            <textarea id="about-textarea" rows="6"></textarea>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects-admin">
+            <h2>Projects</h2>
+            <div id="projects-list"></div>
+            <button id="add-project-btn">Add Project</button>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-admin">
+            <h2>Skills</h2>
+            <div id="skills-list"></div>
+            <button id="add-skill-btn">Add Skill</button>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-admin">
+            <h2>Contact Information</h2>
+            <div id="contact-list"></div>
+            <button id="add-contact-btn">Add Contact Info</button>
+        </section>
+
+        <button id="save-changes-btn">Save Changes</button>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

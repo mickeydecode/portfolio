@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/save.js", "use": "@vercel/node" },
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/static" },
+    { "src": "*.css", "use": "@vercel/static" },
+    { "src": "database.json", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/save", "dest": "/api/save.js" },
+    { "src": "/admin", "dest": "/admin.html" },
+    { "src": "/", "dest": "/Portfolio.html" }
+  ]
+}
